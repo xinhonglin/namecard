@@ -1,0 +1,200 @@
+/* *字號可一次設定網頁的所有元素 */
+*{
+  
+  /* 字體顏色 c */
+  color: #555;
+  
+  /* 字體 ff */
+  font-family: 微軟正黑體;
+  
+  /* 字距 ls */
+  letter-spacing: 2px; 
+  
+  /* 框線 */  
+  /* border: 1px solid #000; */
+  
+}
+
+/* html是文件，body是放網頁內容的地方 */
+html,body{
+  
+  /* 外距 m */
+  margin: 0;
+  
+  /* 高度 h */
+  height: 100%;
+  
+  /* 元素高度包含框線 bxs */
+  box-sizing: border-box;
+  
+}
+
+/* 整個網頁畫面 */
+body{
+  
+  /* 上框線 bdt */
+  border-top: 20px solid red;
+  
+  /* 下框線 bdb */
+  border-bottom: 20px solid red;
+  
+  /* 背景顏色 bgc */
+  background-color: #d1d1d1;
+  
+}
+
+
+
+/* 名片區塊 */
+.namecard{
+  
+   /* 寬度 w */
+  width: 350px;
+  /* 高度 h */
+  height: 200px;
+  
+  /* 水平置中 m */
+  margin: auto;
+  
+  /* 和上方的距離 mt */
+  margin-top: 200px;
+  
+  /* 內距 p (美感) */
+  padding: 20px;
+  
+  /* 相對定位 por */
+  position: relative;
+  
+  /* 背景顏色 bgc */
+  background-color: #fff;
+  
+  /* 將超出範圍的內容隱藏 ov */
+  overflow: hidden;
+  
+  /* 框線圓角 bdrs */
+  border-radius: 10px;
+  
+  /* 陰影 bxsh */
+  box-shadow: 0px 0px 15px #999;
+  
+  /* 動畫完成時間 trsdu */
+  transition-duration: 0.5s;
+}
+
+
+/* 滑鼠移到該區域(名片)會發生的事情 :hover */
+.namecard:hover{
+  
+  /* 位移動畫 trft */
+  transform: translate(-10px, -10px);
+  
+  /* 陰影 bxsh */
+  box-shadow: 10px 10px 30px #999;
+  
+}
+
+/* 滑鼠移到名片後，大圓會發生的動畫 */
+.namecard:hover .big_circle{
+  
+  /* 位移動畫 trft */
+  transform: translate(0px, -10px);
+}
+
+/* 滑鼠移到名片後，小圓會發生的動畫 */
+.namecard:hover .small_circle{
+  
+  /* 放大動畫 trf:s */
+  transform: scale(1.3);  
+}
+
+
+
+/* 大圓 */
+.big_circle{
+  
+  width: 100px;
+  height: 100px;
+  
+  /* 框線圓角 bdrs */
+  border-radius: 100%;
+  
+  /* 絕對定位 poa */
+  position: absolute;
+  
+  /* 離右邊的距離 r */
+  right: 100px;
+  
+  /* 離下方的距離 b */
+  bottom: -90px;
+  
+ /* 背景顏色 bgc */
+  background-color: red;
+  
+  /* 動畫完成時間 trsdu */
+  transition-duration: 0.5s;
+}
+
+
+/* 小圓 */
+.small_circle{
+  
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  
+  position: absolute;
+  right: -35px;
+  
+  /* 離下上方的距離 t */
+  top: -35px;
+  
+  /* 框線 bd */
+  border: 3px solid red;
+  
+  /* 動畫完成時間 trsdu */
+  transition-duration: 0.5s;
+  
+  /* 動畫延遲時間 trsdu */
+  transition-delay: 0.5s;
+}
+
+
+/* 網頁設計作品-名片 */
+h3{
+  /* 絕對定位 poa，想去哪就去哪 */
+  position: absolute;
+  bottom: 10px;
+  
+  /* 寬度100%，會將border伸縮至網頁的寬度 */
+  width: 100%;
+  
+  /* 文字置中 tac*/
+  text-align: center;
+}
+
+
+/* 中文姓名 */
+h2{
+  
+  /* 字體大小 fz */
+  font-size: 28px;
+}
+
+
+/* 英文姓名 */
+span{
+  font-size: 12px;
+}
+
+
+/* 身份 */
+h5{
+  /* 字體顏色 c */
+  color: red;
+}
+
+
+/* 自我介紹 */
+p{
+  font-size: 12px;
+}
